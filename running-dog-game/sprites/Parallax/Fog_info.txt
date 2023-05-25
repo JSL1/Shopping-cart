@@ -1,0 +1,5 @@
+I recommend using a layer with some kind of transparency between the parallax and the ingame assets. 
+
+That way it will be easier to separate them and things won't get too confusing.
+
+I included the BG_fog.png as an example that you can use, but you can make your own.
