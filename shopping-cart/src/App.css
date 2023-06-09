@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #E6E6E6;
+  color: #A1A1A1;
+  font-family: 'Nunito', sans-serif;
+
+}
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Ranga', cursive;
+*/
+
+/*Header/Navbar */
+#header {
+  background-color: #CEDBAD;
+  width: 100vw;
+  height: 5rem;
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #48576E;
+}
+#header a, #header a:visited, #header a:active {
+  color: #8EADDB;
+}
+
+.footer {
+  background-color:  #CEDBAD;
+  width: 100vw;
+  height: 3rem;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 0.5rem;
+}
+.github {
+  height: 1rem;
+  width: 1rem;
+}
+
+.logo {
+  color: #48576E;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: row;
+}
+.navbar {
+  display: flex;
+  width: 40vw;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+  font-family: 'Ranga', cursive;
+  font-size: 3rem;
+}
+.cart-icon, .navbar div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cart-icon {
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+/* ProductCard */
+#store-products {
+  font-family: 'Nunito', sans-serif;
+  padding-top: 6rem;
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.product-card {
+  width: 30vw;
+  height: 60vh;
+  /*border: 1px solid black;*/
+  border-radius: 1rem;
+}
+
+.product-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background image is inherited from the ProductCard react component */
+  /* Styling within react components is kept to an absolute minimum. All meaningfull styling is done in this file. */
+}
+
+.product-card img {
+ width: auto;
+ height: 100%;
+ opacity: 1;
+ transition: opacity 1s;
+ border: 1px #AAE6D9;
+}
+
+.product-card img:hover {
+  opacity: 0;
+}
+
+/* Product page */
+.product-page {
+  padding-top: 6rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-page-img {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.product-cover {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.product-page-body {
+  width: 50%;
+  overflow: hidden;
+  margin: 0px;
+  text-align:center;
+  padding: 10rem
+}
+
+/* Shopping Cart */
+#cart-main {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  border: 1px dotted black;
+  flex-direction: row;
+}
+
+.cart-product-img {
+  width: 20rem;
+  height: auto;
+  border: 1px solid black;
+}
+
+.cart-product-img img {
+  width: 100%;
+}
+
+.cart-product-body {
+  padding: 2rem 0 0 2rem;
+}
+.cart-product-body button {
+  border: none;
+  border-radius: 5px;
+  background-color: #E6B0AA;
+}
